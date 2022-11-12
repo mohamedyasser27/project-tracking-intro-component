@@ -1,0 +1,32 @@
+:root {
+  --Red: #ff5c5c;
+  --Very_Dark_Blue: #242942;
+  --Dark_Grayish_Blue: #5b5f71;
+  --Grayish_Blue: #a0a1ac;
+  --Light_Grayish_Blue: #eef3f6;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ### Headings, Call-to-actions, Navigation
+font-family: 'Barlow Condensed', sans-serif; */
+
+body {
+  height: 100%;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
