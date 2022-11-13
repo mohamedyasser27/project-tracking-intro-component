@@ -47,7 +47,7 @@ main {
 }
 
 .content {
-  width: 76%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -151,8 +151,7 @@ header .content {
 
 .description__heading {
   font-weight: initial;
-  font-size: 1.3rem;
-
+  font-size: clamp(1rem, 0.8500rem + 0.7500vw, 1.2rem);
   color: var(--Grayish_Blue);
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -179,23 +178,26 @@ header .content {
 }
 
 .description__info2 {
-  font-size: clamp(1rem, 0.625rem + 1.875vw, 1.5rem);
+font-size: clamp(1.3rem, 1.1500rem + 0.7500vw, 1.5rem);
   color: var(--Dark_Grayish_Blue);
   line-height: 1;
   margin-bottom: 75px;
+  font-weight: initial;
 }
 
 .dashboard__description__action-area {
   display: flex;
-  gap: 30px;
+  gap: 15px;
   align-items: center;
 }
 
 .action-area__schedule-btn {
   background-color: var(--Red);
+  box-sizing: content-box;
   border-radius: 5px;
   color: var(--White);
-  font-size: clamp(0.7rem, 0.475rem + 1.125vw, 1rem);
+  font-size: clamp(0.75rem, 0.5625rem + 0.9375vw, 1rem);
+
   padding: 1em 2em;
   font-weight: 700;
   text-transform: uppercase;
@@ -206,6 +208,7 @@ header .content {
 }
 
 .action-area__label {
+  font-size: clamp(0.8rem, 0.65rem + 0.75vw, 1rem);
   color: var(--Dark_Grayish_Blue);
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -219,13 +222,7 @@ header .content {
   width: 50%;
 }
 
-
-.dashboard__illustration img {
- 
-}
-
 @media only screen and (max-width: 850px) {
-
   .main-nav {
     display: none;
   }
@@ -234,6 +231,11 @@ header .content {
   .mobile-nav__list {
     display: flex;
   }
+
+header .content{
+  padding-top: 25px;
+
+}
 
   .dashboard .content {
     display: flex;
@@ -251,12 +253,11 @@ header .content {
   .dashboard__illustration {
     order: -1;
   }
-  .dashboard__description{
-    translate: 0 -15%;
-
+  .dashboard__description {
+    translate: 0 -30%;
   }
   .dashboard__illustration img {
-    scale: .7;
-    translate: -20% -15%;
+    scale: 0.7;
+    translate: -18% -15%;
   }
 }
