@@ -4,6 +4,7 @@
   --Dark_Grayish_Blue: #5b5f71;
   --Grayish_Blue: #a0a1ac;
   --Light_Grayish_Blue: #eef3f6;
+  --White: #fff;
 }
 
 html {
@@ -27,6 +28,122 @@ font-family: 'Barlow Condensed', sans-serif; */
 
 body {
   height: 100%;
-  font-family: "Barlow", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
+}
+
+.resetBtnStyle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none !important;
+}
+
+header {
+  /*relative to mobile-nav*/
+  position: relative;
+}
+header .content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.background-pattern {
+  --border-radius: 80px;
+  background-color: var(--Light_Grayish_Blue);
+  position: absolute;
+  border-bottom-left-radius: var(--border-radius);
+  height: 50%;
+  width: 50%;
+  top: 0px;
+  right: 0;
+  z-index: -1;
+}
+
+.main-nav {
+  margin-left: auto;
+}
+
+.main-nav__list {
+  list-style-type: none;
+  display: flex;
+  gap: max(4vw, 30px);
+}
+
+.main-nav__btn:hover {
+  text-decoration: underline;
+}
+
+.main-nav__btn {
+  color: var(--Very_Dark_Blue);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.login-btn {
+  color: var(--Dark_Grayish_Blue);
+  margin-left: max(4vw, 60px);
+}
+
+.mobile-nav {
+  display: none;
+  align-items: center;
+  margin-left: auto;
+}
+
+.mobile-nav__list {
+  list-style-type: none;
+  background-color: var(--White);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+  translate: -50% 110%;
+  left: 50%;
+  width: min(600px, 90%);
+  padding-block: 20px;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  gap: max(2vw, 20px);
+  box-shadow: -10px 10px 36px 0px rgba(184, 184, 184, 1);
+}
+
+.mobile-nav__item .login-btn {
+  margin-left: 0px;
+}
+
+.mobile-nav__btn {
+  color: var(--Very_Dark_Blue);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.mobile-nav__list hr {
+  width: 90%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+@media only screen and (max-width: 810px) {
+  .background-pattern {
+    left: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: var(--border-radius);
+  }
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-nav,
+  .mobile-nav__list {
+    display: flex;
+  }
 }

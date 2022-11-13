@@ -7,23 +7,115 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Frontend Mentor | Project tracking intro component</title>
   </head>
   <body>
-    <!-- Product
-  Features
-  Pricing
-  Login
+    <main>
+      <div class="background-pattern"></div>
+      <header>
+        <div class="content">
+          <img src="./assets/images/logo.svg" alt="website name" class="logo" />
+          <nav class="main-nav" aria-label="main navigation">
+            <ul class="main-nav__list" aria-label="navigation list">
+              <li class="main-nav__item">
+                <button
+                  class="resetBtnStyle main-nav__btn product-btn"
+                  aria-label="products button"
+                >
+                  Product
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <button
+                  class="resetBtnStyle main-nav__btn features-btn"
+                  aria-label="features button"
+                >
+                  Features
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <button
+                  class="resetBtnStyle main-nav__btn pricing-btn"
+                  aria-label="pricing button"
+                >
+                  Pricing
+                </button>
+              </li>
+              <li class="main-nav__item">
+                <button
+                  class="resetBtnStyle main-nav__btn login-btn"
+                  aria-label="login button"
+                >
+                  Login
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav__list invisible" aria-label="navigation list">
+              <li class="mobile-nav__item">
+                <button
+                  class="resetBtnStyle mobile-nav__btn product-btn"
+                  aria-label="products button"
+                >
+                  Product
+                </button>
+              </li>
+              <li class="mobile-nav__item">
+                <button
+                  class="resetBtnStyle mobile-nav__btn features-btn"
+                  aria-label="features button"
+                >
+                  Features
+                </button>
+              </li>
+              <li class="mobile-nav__item">
+                <button
+                  class="resetBtnStyle mobile-nav__btn pricing-btn"
+                  aria-label="pricing button"
+                >
+                  Pricing
+                </button>
+              </li>
+              <hr />
+              <li class="mobile-nav__item">
+                <button
+                  class="resetBtnStyle mobile-nav__btn login-btn"
+                  aria-label="login button"
+                >
+                  Login
+                </button>
+              </li>
+            </ul>
+            <button class="resetBtnStyle mobile-nav__open-nav-btn">
+              <img
+                src="./assets/images/icon-hamburger.svg"
+                alt="open side menu button"
+              />
+            </button>
+            <button class="resetBtnStyle mobile-close-nav-btn invisible">
+              <img
+                src="./assets/images/icon-close.svg"
+                alt="close side menu button"
+              />
+            </button>
+          </nav>
+        </div>
+      </header>
+    </main>
+    <!-- 
 
   New
   Monograph Dashboard
